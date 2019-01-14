@@ -15,6 +15,8 @@ public class Floor : MonoBehaviour {
 
     public CellTypes Type = CellTypes.Empty;
     System.Action OnTrigger;
+    public Artefact ArtefactRef;
+    public Artefact ExitRef;
 
     // Use this for initialization
     void Start() {
@@ -30,6 +32,15 @@ public class Floor : MonoBehaviour {
     {
         Type = type;
         OnTrigger = action;
+        switch(type)
+        {
+            case CellTypes.Artefact:
+                ArtefactRef.gameObject.SetActive(true);
+                break;
+            case CellTypes.Exit:
+                ExitRef.gameObject.SetActive(true);
+                break;
+        }
     }
 
     public void ActionCall()

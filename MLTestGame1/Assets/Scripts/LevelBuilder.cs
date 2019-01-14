@@ -96,7 +96,7 @@ public class LevelBuilder : MonoBehaviour {
         {
             var artifact_cell = EmptyFloors[Random.Range(0, EmptyFloors.Count)];
             EmptyFloors.Remove(artifact_cell);
-            artifact_cell.SetType(Floor.CellTypes.Artefact);
+            artifact_cell.SetType(Floor.CellTypes.Artefact, ()=> { Debug.Log("Artefact received!"); });
         }
     }
 }
