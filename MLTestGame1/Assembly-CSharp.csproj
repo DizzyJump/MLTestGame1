@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Floor.cs" />
+    <Compile Include="Assets\Scripts\GameDirector.cs" />
     <Compile Include="Assets\Scripts\LevelBuilder.cs" />
     <Compile Include="Assets\Scripts\PlayerTest.cs" />
     <Reference Include="UnityEditor.StandardEvents">

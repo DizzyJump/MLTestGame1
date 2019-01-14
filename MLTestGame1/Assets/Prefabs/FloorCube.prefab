@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33433771546559296}
   - component: {fileID: 23974548153869712}
   - component: {fileID: 65601392419135088}
+  - component: {fileID: 114655805242633550}
   m_Layer: 0
   m_Name: FloorCube
   m_TagString: Untagged
@@ -57,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 396b2d71bf0e924479d3a9f749a5023e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,3 +97,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114655805242633550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523361501009598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb63f0e4d517f8f42bacff09b0af5643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 4
